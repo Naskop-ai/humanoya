@@ -1,0 +1,92 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a conversation · Humanoya</title>
+<meta name="description" content="Twenty minutes with a Humanoya advisor, by video or at the Humanoya agency. No obligation.">
+<link rel="icon" href="img/column.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Newsreader:ital,opsz,wght@1,6..72,400;1,6..72,500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/site.css">
+<link rel="stylesheet" href="css/film.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<header class="top" id="top">
+  <a class="brand" href="index.html"><img src="img/logo.png" alt="" width="32" height="32"><span>Humanoya</span></a>
+  <nav class="nav" id="nav" aria-label="Main">
+    <a href="how-it-works.html">How it works</a>
+    <a href="training.html">Training</a>
+    <a href="blog.html">Blog</a>
+    <a href="about.html">About</a>
+    <a class="nav-login" href="app/login.html">Log in</a>
+  </nav>
+  <div class="tools">
+    <a class="icb" href="book.html" aria-label="Book a call"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path d="M6.6 3h3l1.4 4.2-2 1.4a11 11 0 0 0 5.4 5.4l1.4-2L21 13.4v3a2.6 2.6 0 0 1-2.8 2.6A15.5 15.5 0 0 1 4 4.8 2.6 2.6 0 0 1 6.6 3z" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round"/></svg></a>
+    <button class="icb" id="themeBtn" type="button" aria-label="Switch between dark and light"><svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="M12 2.5v2.4M12 19.1v2.4M2.5 12h2.4M19.1 12h2.4M5.3 5.3 7 7M17 17l1.7 1.7M5.3 18.7 7 17M17 7l1.7-1.7" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></svg></button>
+    <a class="btn go" href="app/login.html#signup">Start for free</a>
+    <button class="burger" aria-expanded="false" aria-controls="nav" type="button">Menu</button>
+  </div>
+</header>
+<main id="main">
+
+
+<section class="ch c-gold hero hero2" aria-labelledby="h1" style="min-height:80svh">
+  <h1 id="h1" class="h-mega" style="grid-column:1/-1">Let us talk</h1>
+  <div class="under"><p>Twenty minutes with an advisor. For you, for your elder, or for both. No obligation.</p></div>
+  <figure class="art"><img src="img/phone.png" alt="A phone" width="600" height="400"></figure>
+</section>
+<section class="ch c-cream" aria-labelledby="bk-h" style="min-height:0">
+  <h2 class="h-big" id="bk-h" style="grid-column:1/-1;margin-bottom:56px">Pick a time</h2>
+  <div class="cols2" style="grid-column:1/-1">
+    <form class="a" id="bookForm" style="grid-column:1/8" novalidate>
+      <div class="field"><label for="kind">What would you like?</label><select id="kind" name="kind"><option>First call, 20 minutes by video</option><option>Visit the agency</option><option>Family kick-off meeting, 1 hour</option><option>Café Humanoya, group of pairs</option></select></div>
+      <p style="font-weight:700;margin-bottom:10px">Day</p><div class="days" id="bkDays" role="group" aria-label="Day"></div>
+      <p style="font-weight:700;margin-bottom:10px">Time</p><div class="slots" id="bkSlots" role="group" aria-label="Time"><span class="small">Choose a day first.</span></div>
+      <div class="field" style="margin-top:28px"><label for="bn">Your name</label><input id="bn" name="name" required autocomplete="name"></div>
+      <div class="field"><label for="be">Your email</label><input id="be" name="email" type="email" required autocomplete="email"></div>
+      <div class="field"><label for="bt">Anything we should know? (optional)</label><textarea id="bt" name="note" rows="3"></textarea></div>
+      <p id="bkMsg" role="alert" tabindex="-1" style="font-weight:700;color:#8a2a1e"></p>
+      <button class="btn" type="submit">Request this time</button>
+    </form>
+    <div class="b" id="bkDone" hidden style="grid-column:1/-1"><h3 class="h-mid">Almost done</h3><p class="lead" id="bkDoneTxt" style="margin-top:20px"></p><p style="max-width:50ch">Send the message that is ready in your email app and we will confirm within one working day.</p><a class="btn" id="bkMail" href="#">Open the message</a></div>
+    <div class="stack" style="grid-column:9/-1"><h3>What to expect</h3><p>A friendly talk about what you want to learn or understand. We explain the course, the bonuses and how fees work. We never sell on a first call.</p><h3 style="font-size:1.5rem;text-transform:none;letter-spacing:-0.03em;margin-top:32px">Where</h3><p>By video, or at the Humanoya agency (address to be confirmed at opening).</p><h3 style="font-size:1.5rem;text-transform:none;letter-spacing:-0.03em;margin-top:32px">Café Humanoya</h3><p>Once a month, six to ten pairs, a host and an advisor. Ask for the next date.</p><figure class="art"><img src="img/young.svg" alt="A young person holding a phone" width="300" height="450"></figure></div>
+  </div>
+</section>
+
+<section class="ch c-sand" aria-labelledby="cta-h" style="min-height:0;padding-top:96px;padding-bottom:96px">
+  <div class="cta-row">
+    <div class="side s1" aria-hidden="true"><img src="img/young.svg" alt="" width="300" height="450"></div>
+    <div class="main"><h2 id="cta-h">Not ready to talk?</h2><p>Start with the free course. The advisor will still be here.</p><a class="btn" href="book.html">Book a conversation</a></div>
+    <div class="side s2" aria-hidden="true"><img src="img/elder.svg" alt="" width="300" height="450"></div>
+  </div>
+</section>
+</main>
+<footer class="foot c-deep">
+  <p class="name" aria-hidden="true">Humanoya</p>
+  <div class="grid">
+    <div class="places">
+      <a href="book.html">Book a conversation</a>
+      <a href="mailto:hello@humanoya.example">hello@humanoya.example</a>
+      <a href="about.html">The Humanoya agency</a>
+    </div>
+    <div class="cols">
+      <div><b>Explore</b><a href="how-it-works.html">How it works</a><a href="training.html">Training</a><a href="blog.html">Blog</a><a href="about.html">About</a></div>
+      <div><b>Your account</b><a href="app/login.html">Log in</a><a href="app/login.html#signup">Create an account</a><a href="book.html">Book a call</a></div>
+      <div><b>Legal</b><a href="legal.html">Legal notice</a><a href="privacy.html">Privacy</a><a href="terms.html">Terms of use</a><a href="cookies.html">Cookies</a></div>
+    </div>
+  </div>
+  <div class="legal"><span>© 2026 Humanoya. Prototype: product, partners and terms are shown as planned.</span><a href="#top">Back to top</a></div>
+</footer>
+<div class="cookie" id="cookie" role="dialog" aria-labelledby="ck-h" aria-live="polite">
+  <h2 id="ck-h">Cookies, kept simple</h2>
+  <p>We use essential cookies to keep you signed in and remember your progress. With your consent we also measure visits to improve the course. You can change your mind at any time on the <a href="cookies.html">cookies page</a>.</p>
+  <div class="row"><button class="btn" data-ck="all" type="button">Accept all</button><button class="btn alt" data-ck="essential" type="button">Essential only</button></div>
+</div>
+<div class="film-dlg" id="filmDlg" role="dialog" aria-modal="true" aria-label="Humanoya film"><div class="film-box"><div class="bar"><span id="filmTitle">Humanoya in 90 seconds</span><button class="link" id="filmClose" type="button">Close</button></div><div id="filmHost"></div></div></div>
+<script src="js/art.js"></script>
+<script src="js/film.js"></script>
+<script src="js/films-data.js"></script>
+<script src="js/site.js"></script>
+</body>
+</html>

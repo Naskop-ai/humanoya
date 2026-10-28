@@ -1,0 +1,16 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Film</title>
+<link href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=Newsreader:opsz,wght@6..72,400;6..72,500;6..72,600&display=swap" rel="stylesheet"><link rel="stylesheet" href="css/film.css">
+<style>html,body{margin:0;background:#0C1A33}.bare .fbar,.bare .fbig{display:none}</style></head>
+<body><div id="f"></div>
+<script src="js/art.js"></script><script src="js/film.js"></script><script src="js/films-data.js"></script>
+<script>
+var id = new URLSearchParams(location.search).get('f') || 'intro';
+document.title = FILMS[id].title;
+if (/bare/.test(location.search)) document.body.className = 'bare';
+var qs = new URLSearchParams(location.search);
+var film = new Film(document.getElementById('f'), FILMS[id], { autoplay: qs.get('auto') === '1', onstate: function () { try { parent.postMessage({ hxFilmState: { playing: film.playing, sound: film.sound } }, '*'); } catch (e) {} } });
+window.addEventListener('message', function (e) { var m = e.data && e.data.hx; if (!m) return; if (m === 'sound') film.setSound(!!e.data.on); else if (m === 'pause') film.pause(); else if (m === 'play') film.play(); else if (m === 'toggle') film.toggle(); else if (m === 'restart-sound') film.restartWithSound(); });
+function tell() { try { parent.postMessage({ hxFilmH: Math.ceil(document.getElementById('f').getBoundingClientRect().height) }, '*'); } catch (e) {} }
+new ResizeObserver(tell).observe(document.getElementById('f')); tell();
+</script></body></html>
